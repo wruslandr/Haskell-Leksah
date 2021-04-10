@@ -1,33 +1,17 @@
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ date
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr$ date
 Fri 09 Apr 2021 11:57:39 PM +08
 
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ uname -a
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr$ uname -a
 Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
 Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
 
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ lsb_release -a
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr$ lsb_release -a
 LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
 Distributor ID:	Ubuntu
 Description:	Ubuntu 20.04.2 LTS
 Release:	20.04
 Codename:	focal
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr$ 
 
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr$ cd Haskell-Leksah/
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ ls -al
-total 20
-drwxrwxr-x 4 wruslan wruslan 4096 Apr  9 23:56 .
-drwxrwxr-x 3 wruslan wruslan 4096 Apr  9 23:56 ..
-drwxrwxr-x 8 wruslan wruslan 4096 Apr  9 23:55 .git
--rw-rw-r-- 1 wruslan wruslan   37 Apr  9 23:55 README.md
-drwxrwxr-x 2 wruslan wruslan 4096 Apr  9 23:56 sessions
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ 
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ tree ./
-./
-├── README.md
-└── sessions
-
-1 directory, 1 file
-wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/Haskell-Leksah$ 
 
 

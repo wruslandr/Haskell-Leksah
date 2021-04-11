@@ -1,0 +1,229 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~$ date
+Sun 11 Apr 2021 01:01:00 PM +08
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ uname -a
+Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
+Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+PYTHON2
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python
+Python 2.7.18 (default, Mar  8 2021, 13:02:45) 
+[GCC 9.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import os
+>>> import sys
+>>> import dateutil
+>>> import time
+>>> import timeit
+>>> 
+>>> import numpy
+>>> import scipy
+>>> import matplotlib
+>>> import pylab
+>>> import matplotlib.pyplot
+>>> 
+>>> import geomdl
+>>> import plotly
+>>> import plotlywidget
+>>> import chart_studio
+>>>
+>>> import Gnuplot
+>>> import Gnuplot.funcutils
+>>> import pygnuplot
+>>> 
+>>> import h5py
+>>> import cython
+>>> import PyQt4
+>>> import PyQt5
+>>> 
+>>> import threading
+>>> import multiprocessing
+>>> 
+>>> help()
+
+Welcome to Python 2.7!  This is the online help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/2.7/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, or topics, type "modules",
+"keywords", or "topics".  Each module also comes with a one-line summary
+of what it does; to list the modules whose summaries contain a given word
+such as "spam", type "modules spam".
+
+help> modules
+
+Please wait a moment while I gather a list of all available modules...
+
+BaseHTTPServer      cPickle             keras_applications  sched
+Bastion             cProfile            keras_preprocessing scipy
+CDROM               cStringIO           keyring             scour
+CGIHTTPServer       cachetools          keyword             script
+Canvas              caffe2              kiwisolver          seaborn
+ConfigParser        cairo               lib2to3             select
+Cookie              calendar            libfuturize         serial
+Crypto              certifi             libpasteurize       sets
+Cython              cffi                libsvn              setuptools
+DLFCN               cgi                 libusb1             sgmllib
+Dialog              cgitb               linecache           sha
+DocXMLRPCServer     chardet             linecache2          shelve
+FileDialog          chart_studio        linuxaudiodev       shlex
+FixTk               chunk               locale              shutil
+Gnuplot             click               logging             signal
+HTMLParser          cmath               lsb_release         simplejson
+IN                  cmd                 lxml                singledispatch
+MimeWriter          code                macpath             singledispatch_helpers
+PIL                 codecs              macurl2path         sip
+PyQt4               codeop              mailbox             sipconfig
+PyQt5               collections         mailcap             sipconfig_d
+Pyro                colorama            markdown            sipconfig_nd
+Queue               colorsys            markupbase          sipdistutils
+RDF                 colour              markupsafe          site
+Redland             commands            marshal             sitecustomize
+ScrolledText        compileall          math                six
+SimpleDialog        compiler            matplotlib          sklearn
+SimpleHTTPServer    concurrent          md5                 smartypants
+SimpleXMLRPCServer  configparser        mdp                 smtpd
+SocketServer        contextlib          mercurial           smtplib
+StringIO            contextlib2         mhlib               sndhdr
+TYPES               cookielib           mimetools           socket
+Tix                 copy                mimetypes           socketserver
+Tkconstants         copy_reg            mimify              soupsieve
+Tkdnd               copyreg             mmap                spwd
+Tkinter             crypt               mock                sqlite3
+UserDict            cryptography        modulefinder        sre
+UserList            csv                 more_itertools      sre_compile
+UserString          ctypes              moz_version         sre_constants
+_LWPCookieJar       curses              mpl_toolkits        sre_parse
+_MozillaCookieJar   cycler              multifile           ssl
+_Redland            cython              multiprocess        sslpsk
+__builtin__         dataclasses         multiprocessing     stat
+__future__          datetime            mutex               statvfs
+_abcoll             dateutil            mvcopyreg           string
+_ast                dbhash              nacl                stringold
+_bisect             dbm                 netifaces           stringprep
+_bsddb              dbus                netrc               strop
+_cffi_backend       decimal             network             struct
+_codecs             decorator           networkx            structure
+_codecs_cn          difflib             new                 subprocess
+_codecs_hk          dill                nis                 subprocess32
+_codecs_iso2022     dircache            nlp                 sunau
+_codecs_jp          dis                 nntplib             sunaudio
+_codecs_kr          distlib             nose                svn
+_codecs_tw          distutils           ntpath              symbol
+_collections        docs                nturl2path          symtable
+_csv                doctest             numbers             sys
+_ctypes             docutils            numpy               sysconfig
+_ctypes_test        doxypypy            oauthlib            syslog
+_curses             dsextras            olefile             tabnanny
+_curses_panel       dumbdbm             opcode              talloc
+_dbus_bindings      dummy_thread        operator            tarfile
+_dbus_glib_bindings dummy_threading     opt_einsum          telnetlib
+_dummy_thread       easy_install        optparse            tempfile
+_elementtree        echotorch           os                  tensorboard
+_functools          email               os2emxpath          tensorflow
+_hashlib            encodings           ossaudiodev         tensorflow_core
+_heapq              ensurepip           packaging           tensorflow_estimator
+_hotshot            entrypoints         pandas              termcolor
+_io                 enum                pango               termios
+_json               errno               pangocairo          test
+_k8000              exceptions          paramiko            textwrap
+_k8055              ez_setup            parser              theano
+_locale             fcntl               past                this
+_lsprof             filecmp             pasta               thread
+_markupbase         fileinput           pathlib2            threading
+_md5                filelock            pathspec            time
+_multibytecodec     fire                pdb                 timeit
+_multiprocessing    flask               pickle              tinynetrc
+_osx_support        flask_login         pickletools         tkColorChooser
+_plotly_future_     fnmatch             pip                 tkCommonDialog
+_plotly_geo         formatter           pipdate             tkFileDialog
+_plotly_utils       fpformat            pipes               tkFont
+_posixsubprocess32  fractions           pkg_resources       tkMessageBox
+_pyio               ftplib              pkgutil             tkSimpleDialog
+_pyk8000            funcsigs            platform            tkinter
+_pyk8055            functools           plistlib            toaiff
+_pytest             functools32         plotly              token
+_random             future              plotlywidget        tokenize
+_scandir            future_builtins     pluggy              toml
+_sha                gast                ply                 tools
+_sha256             gc                  popen2              torch
+_sha512             genericpath         poplib              torchvision
+_socket             genshi              posix               tornado
+_sqlite3            geomdl              posixfile           tqdm
+_sre                getopt              posixpath           trace
+_ssl                getpass             pprint              traceback
+_strptime           gettext             profile             traceback2
+_struct             gi                  pstats              ttk
+_symtable           gio                 pty                 tty
+_sysconfigdata      glib                pwd                 turtle
+_sysconfigdata_d    glob                py                  types
+_sysconfigdata_nd   gobject             py_compile          typing
+_testcapi           google_auth_oauthlib pyarrow             typogrify
+_thread             googlesearch        pyasn1              unicodedata
+_threading_local    grp                 pyasn1_modules      unittest
+_tkinter            grpc                pybrain             unittest2
+_warnings           gtk                 pyclbr              urllib
+_weakref            gtkunixprint        pycparser           urllib2
+_weakrefset         gyp                 pydoc               urllib3
+abc                 gzip                pydoc_data          urlparse
+absl                h5py                pyexpat             usb1
+aifc                hashlib             pyflakes            user
+antigravity         heapq               pygments            uu
+anydbm              hgdemandimport      pygnuplot           uuid
+appdirs             hgext               pygtk               virtualenv
+apt                 hgext3rd            pygtkcompat         warnings
+apt_inst            hmac                pyinotify           wave
+apt_pkg             hotshot             pyk8000             wcwidth
+aptsources          html                pyk8055             weakref
+argparse            html5lib            pylab               webbrowser
+array               htmlentitydefs      pymodbus            webencodings
+ast                 htmllib             pyparsing           werkzeug
+astor               http                pytest              wheel
+asynchat            httplib             pytils              whichdb
+asyncore            hwlatdetect         pytz                winreg
+atexit              idlelib             pyximport           wrapt
+atk                 idna                queue               wsgiref
+atomicwrites        ihooks              quopri              wxversion
+attr                imaplib             random              xdg
+audiodev            imghdr              re                  xdrlib
+audioop             imp                 readline            xml
+backports           importlib           repr                xmllib
+backports_abc       importlib_metadata  reprlib             xmlrpc
+base64              importlib_resources requests            xmlrpclib
+bcrypt              imputil             requests_oauthlib   xxhash
+bdb                 inspect             resource            xxsubtype
+bimdp               io                  retrying            yaml
+bin                 ipaddress           rexec               yapps
+binascii            itertools           rfc822              zeroconf
+binhex              itsdangerous        rlcompleter         zipfile
+bisect              jinja2              robotparser         zipimport
+bs4                 json                roman               zipp
+bsddb               k8000               rsa                 zlib
+builtins            k8055               runpy               
+bz2                 keras               scandir             
+
+Enter any module name to get more help.  Or, type "modules spam" to search
+for modules whose descriptions contain the word "spam".
+
+help> 
+[1]+  Stopped                 python
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================

@@ -133,3 +133,140 @@ wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-exampl
 ===========================================================
 ALHAMDULILLAH 3 TIMES WRY.
 ===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ git add .
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ git commit -m "initial commit"
+[master 7f28bd5] initial commit
+ 116 files changed, 6449 insertions(+)
+ create mode 100644 geomdl-examples/LICENSE
+ create mode 100644 geomdl-examples/README.rst
+ create mode 100644 geomdl-examples/bezier/README.md
+ create mode 100644 geomdl-examples/bezier/ex_bezier_curve2d.py
+ create mode 100644 geomdl-examples/bezier/ex_bezier_curve3d.py
+ create mode 100644 geomdl-examples/bezier/ex_bezier_surface.py
+ create mode 100644 geomdl-examples/bezier/images/Bezier01.png
+ create mode 100644 geomdl-examples/bezier/images/Bezier02.png
+ create mode 100644 geomdl-examples/bezier/images/Bezier03.png
+ create mode 100644 geomdl-examples/bezier/images/Bezier04.png
+ create mode 100644 geomdl-examples/compat/ex_convert01.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve01.cpt
+ create mode 100644 geomdl-examples/curve2d/ex_curve01.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve01_decompose.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve01_knot_insert.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve01_refinement.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve01_split.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve02.cpt
+ create mode 100644 geomdl-examples/curve2d/ex_curve02.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve02_decompose.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve02_split.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve03.cpt
+ create mode 100644 geomdl-examples/curve2d/ex_curve03.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve03_decompose.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve04.cptw
+ create mode 100644 geomdl-examples/curve2d/ex_curve04.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve04_convert3d.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve04_decompose.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve04_degree.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve05_clamped.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve05_periodic.py
+ create mode 100644 geomdl-examples/curve2d/ex_curve05_unclamped.py
+ create mode 100644 geomdl-examples/curve2d/temp-plot.html
+ create mode 100644 geomdl-examples/curve3d/ex_curve3d01.cpt
+ create mode 100644 geomdl-examples/curve3d/ex_curve3d01.py
+ create mode 100644 geomdl-examples/curve3d/ex_curve3d01_split.py
+ create mode 100644 geomdl-examples/curve3d/ex_curve3d02.cpt
+ create mode 100644 geomdl-examples/curve3d/ex_curve3d02.py
+ create mode 100644 geomdl-examples/exchange/ex_obj.py
+ create mode 100644 geomdl-examples/exchange/ex_off.py
+ create mode 100644 geomdl-examples/exchange/ex_stl.py
+ create mode 100644 geomdl-examples/exchange/ex_vtk.py
+ create mode 100644 geomdl-examples/exchange/ex_vtk_multisurf.py
+ create mode 100644 geomdl-examples/fitting/approximation/ex_curve3d.cpt
+ create mode 100644 geomdl-examples/fitting/approximation/global_curve2d.py
+ create mode 100644 geomdl-examples/fitting/approximation/global_curve3d.py
+ create mode 100644 geomdl-examples/fitting/approximation/global_surface.py
+ create mode 100644 geomdl-examples/fitting/interpolation/ex_curve3d.cpt
+ create mode 100644 geomdl-examples/fitting/interpolation/global_curve2d.py
+ create mode 100644 geomdl-examples/fitting/interpolation/global_curve3d.py
+ create mode 100644 geomdl-examples/fitting/interpolation/global_surface.py
+ create mode 100644 geomdl-examples/grid/ex_grid01.py
+ create mode 100644 geomdl-examples/grid/ex_grid02.py
+ create mode 100644 geomdl-examples/grid/ex_surfgen01.py
+ create mode 100644 geomdl-examples/grid/ex_surfgen02.py
+ create mode 100644 geomdl-examples/grid/ex_surfgen03.py
+ create mode 100644 geomdl-examples/isu/README.md
+ create mode 100644 geomdl-examples/isu/ex_smesh.py
+ create mode 100644 geomdl-examples/objects/duck1.ctrlpts
+ create mode 100644 geomdl-examples/objects/duck1.weights
+ create mode 100644 geomdl-examples/objects/duck2.ctrlpts
+ create mode 100644 geomdl-examples/objects/duck3.ctrlpts
+ create mode 100644 geomdl-examples/objects/ducky.py
+ create mode 100644 geomdl-examples/octave/README.md
+ create mode 100644 geomdl-examples/octave/ex_curve02.m
+ create mode 100644 geomdl-examples/shapes/ex_circle_7cp.py
+ create mode 100644 geomdl-examples/shapes/ex_circle_9cp.py
+ create mode 100644 geomdl-examples/shapes/ex_cylinder.py
+ create mode 100644 geomdl-examples/surface/ex_curved.py
+ create mode 100644 geomdl-examples/surface/ex_cylinder.cptw
+ create mode 100644 geomdl-examples/surface/ex_cylinder.py
+ create mode 100644 geomdl-examples/surface/ex_cylinder_decompose.py
+ create mode 100644 geomdl-examples/surface/ex_cylinder_half.cptw
+ create mode 100644 geomdl-examples/surface/ex_cylinder_half.py
+ create mode 100644 geomdl-examples/surface/ex_cylinder_quarter.cptw
+ create mode 100644 geomdl-examples/surface/ex_cylinder_quarter.py
+ create mode 100644 geomdl-examples/surface/ex_cylinder_tmpl.cptw
+ create mode 100644 geomdl-examples/surface/ex_cylinder_tmpl.py
+ create mode 100644 geomdl-examples/surface/ex_surface01.cpt
+ create mode 100644 geomdl-examples/surface/ex_surface01.py
+ create mode 100644 geomdl-examples/surface/ex_surface01_decompose.py
+ create mode 100644 geomdl-examples/surface/ex_surface01_rotation.py
+ create mode 100644 geomdl-examples/surface/ex_surface01_split.py
+ create mode 100644 geomdl-examples/surface/ex_surface01_split_multi.py
+ create mode 100644 geomdl-examples/surface/ex_surface02.cpt
+ create mode 100644 geomdl-examples/surface/ex_surface02.py
+ create mode 100644 geomdl-examples/surface/ex_torus.cptw
+ create mode 100644 geomdl-examples/surface/ex_torus.py
+ create mode 100644 geomdl-examples/surface/refinement/ex_density.py
+ create mode 100644 geomdl-examples/surface/trimming/trim_advanced.py
+ create mode 100644 geomdl-examples/surface/trimming/trim_multi.py
+ create mode 100644 geomdl-examples/surface/trimming/trim_multi_sense1.py
+ create mode 100644 geomdl-examples/surface/trimming/trim_multi_sense2.py
+ create mode 100644 geomdl-examples/surface/trimming/trim_multi_sense3.py
+ create mode 100644 geomdl-examples/surface/trimming/trim_separate_surfaces.py
+ create mode 100644 geomdl-examples/surface/trimming/trim_single.py
+ create mode 100644 geomdl-examples/visualization/mpl_curve2d_tangents.py
+ create mode 100644 geomdl-examples/visualization/mpl_curve3d_tangents.py
+ create mode 100644 geomdl-examples/visualization/mpl_curve3d_vectors.py
+ create mode 100644 geomdl-examples/visualization/mpl_trisurf_vectors.py
+ create mode 100644 geomdl-examples/volume/ex_knot_insertion1.py
+ create mode 100644 geomdl-examples/volume/ex_knot_insertion2.py
+ create mode 100644 geomdl-examples/volume/ex_knot_refinement.py
+ create mode 100644 geomdl-examples/volume/ex_knot_removal.py
+ create mode 100644 geomdl-examples/volume/ex_planar_bspline.py
+ create mode 100644 octave6/octave-6.2.0-session-001.txt
+ create mode 100644 text-python2-nurbs/check-python2-nurbs-geomdl.txt
+ create mode 100644 text-python2-nurbs/success-examples-geomdl.txt
+ create mode 100644 text-python2-nurbs/success-python2-nurbs-geomdl-execution.txt
+ create mode 100644 text-python2-nurbs/success-run-001.txt
+ create mode 100644 text-python2-nurbs/visualization-2.py
+ create mode 100644 text-python2-nurbs/visualization-python2-002.py
+ create mode 100644 text-python3-nurbs/check-python3-nurbs-geomdl.txt
+ create mode 100644 text-python3-nurbs/install-nurbs-python.txt
+ create mode 100644 text-python3-nurbs/problem-with-matplotlib-python3.txt
+ create mode 100644 text-python3-nurbs/to-fix-python3-nurbs-geomdl-execution.txt
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ git push origin master
+Username for 'https://github.com': wruslandr
+Password for 'https://wruslandr@github.com': 
+Enumerating objects: 142, done.
+Counting objects: 100% (142/142), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (136/136), done.
+Writing objects: 100% (140/140), 1.53 MiB | 68.00 KiB/s, done.
+Total 140 (delta 42), reused 0 (delta 0)
+remote: Resolving deltas: 100% (42/42), done.
+To https://github.com/wruslandr/Haskell-Leksah.git
+   432cbf5..7f28bd5  master -> master
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ 
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================

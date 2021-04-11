@@ -1,0 +1,196 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~$ date
+Sun 11 Apr 2021 11:55:08 AM +08
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ uname -a
+Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
+Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads$ git clone https://github.com/plotly/plotly.py.git
+Cloning into 'plotly.py'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 93178 (delta 0), reused 0 (delta 0), pack-reused 93172
+Receiving objects: 100% (93178/93178), 97.67 MiB | 936.00 KiB/s, done.
+Resolving deltas: 100% (72131/72131), done.
+Updating files: 100% (10992/10992), done.
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads$ ls -al
+total 568
+drwxr-xr-x  3 wruslan wruslan   4096 Apr 11 11:07 .
+drwxr-xr-x 52 wruslan wruslan   4096 Apr 11 11:05 ..
+drwxrwxr-x  9 wruslan wruslan   4096 Apr 11 11:09 plotly.py
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads$ cd plotly.py/
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py$ ls -al
+total 240
+drwxrwxr-x 9 wruslan wruslan   4096 Apr 11 11:09 .
+drwxr-xr-x 3 wruslan wruslan   4096 Apr 11 11:07 ..
+drwxrwxr-x 2 wruslan wruslan   4096 Apr 11 11:09 binder
+-rw-rw-r-- 1 wruslan wruslan    237 Apr 11 11:09 bld.bat
+-rw-rw-r-- 1 wruslan wruslan    536 Apr 11 11:09 build_for_conda.md
+-rw-rw-r-- 1 wruslan wruslan    220 Apr 11 11:09 build.sh
+-rw-rw-r-- 1 wruslan wruslan 115320 Apr 11 11:09 CHANGELOG.md
+drwxrwxr-x 2 wruslan wruslan   4096 Apr 11 11:09 .circleci
+-rw-rw-r-- 1 wruslan wruslan   3224 Apr 11 11:09 CODE_OF_CONDUCT.md
+-rw-rw-r-- 1 wruslan wruslan  14930 Apr 11 11:09 contributing.md
+drwxrwxr-x 5 wruslan wruslan   4096 Apr 11 11:09 doc
+drwxrwxr-x 8 wruslan wruslan   4096 Apr 11 11:09 .git
+-rw-rw-r-- 1 wruslan wruslan     55 Apr 11 11:09 .gitattributes
+drwxrwxr-x 2 wruslan wruslan   4096 Apr 11 11:09 .github
+-rw-rw-r-- 1 wruslan wruslan    581 Apr 11 11:09 .gitignore
+-rw-rw-r-- 1 wruslan wruslan   1083 Apr 11 11:09 LICENSE.txt
+-rw-rw-r-- 1 wruslan wruslan   7753 Apr 11 11:09 migration-guide.md
+drwxrwxr-x 4 wruslan wruslan   4096 Apr 11 11:09 packages
+-rw-rw-r-- 1 wruslan wruslan    122 Apr 11 11:09 .pre-commit-config.yaml
+-rw-rw-r-- 1 wruslan wruslan    466 Apr 11 11:09 pyproject.toml
+-rw-rw-r-- 1 wruslan wruslan   6632 Apr 11 11:09 README.md
+-rw-rw-r-- 1 wruslan wruslan  13046 Apr 11 11:09 release.md
+-rw-rw-r-- 1 wruslan wruslan    250 Apr 11 11:09 setup.py
+drwxrwxr-x 4 wruslan wruslan   4096 Apr 11 11:09 test
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py$ 
+
+===========================================================
+INSTALL PYTHON3 PLOTLY 
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/plotly$ sudo python3.8 setup.py install
+....
+....
+copying plotlywidget/static/index.js -> build/bdist.linux-x86_64/egg/share/jupyter/nbextensions/plotlywidget
+creating build/bdist.linux-x86_64/egg/etc
+creating build/bdist.linux-x86_64/egg/etc/jupyter
+creating build/bdist.linux-x86_64/egg/etc/jupyter/nbconfig
+creating build/bdist.linux-x86_64/egg/etc/jupyter/nbconfig/notebook.d
+copying plotlywidget.json -> build/bdist.linux-x86_64/egg/etc/jupyter/nbconfig/notebook.d
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly.egg-info/not-zip-safe -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+creating 'dist/plotly-4.14.3+8.g03979d105-py3.8.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing plotly-4.14.3+8.g03979d105-py3.8.egg
+creating /usr/local/lib/python3.8/dist-packages/plotly-4.14.3+8.g03979d105-py3.8.egg
+Extracting plotly-4.14.3+8.g03979d105-py3.8.egg to /usr/local/lib/python3.8/dist-packages
+Adding plotly 4.14.3+8.g03979d105 to easy-install.pth file
+
+Installed /usr/local/lib/python3.8/dist-packages/plotly-4.14.3+8.g03979d105-py3.8.egg
+Processing dependencies for plotly==4.14.3+8.g03979d105
+Searching for six==1.15.0
+Best match: six 1.15.0
+Adding six 1.15.0 to easy-install.pth file
+
+Using /usr/local/lib/python3.8/dist-packages
+Searching for retrying==1.3.3
+Best match: retrying 1.3.3
+Adding retrying 1.3.3 to easy-install.pth file
+
+Using /usr/local/lib/python3.8/dist-packages
+Finished processing dependencies for plotly==4.14.3+8.g03979d105
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/plotly$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/plotly$ cd ..
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python$ ls -al
+total 20
+drwxrwxr-x  5 wruslan wruslan 4096 Apr 11 11:09 .
+drwxrwxr-x  4 wruslan wruslan 4096 Apr 11 11:09 ..
+drwxrwxr-x  8 wruslan wruslan 4096 Apr 11 11:30 chart-studio
+drwxrwxr-x 14 wruslan wruslan 4096 Apr 11 11:42 plotly
+drwxrwxr-x  7 wruslan wruslan 4096 Apr 11 11:36 plotly-geo
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python$ cd chart-studio/
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/chart-studio$ 
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/chart-studio$ sudo python3.8 setup.py install
+....
+....
+creating 'dist/chart_studio-1.1.0-py3.8.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing chart_studio-1.1.0-py3.8.egg
+creating /usr/local/lib/python3.8/dist-packages/chart_studio-1.1.0-py3.8.egg
+Extracting chart_studio-1.1.0-py3.8.egg to /usr/local/lib/python3.8/dist-packages
+/usr/local/lib/python3.8/dist-packages/chart_studio-1.1.0-py3.8.egg/chart_studio/tools.py:290: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if share_key is "":
+Adding chart-studio 1.1.0 to easy-install.pth file
+
+Installed /usr/local/lib/python3.8/dist-packages/chart_studio-1.1.0-py3.8.egg
+Processing dependencies for chart-studio==1.1.0
+Searching for six==1.15.0
+Best match: six 1.15.0
+Adding six 1.15.0 to easy-install.pth file
+
+Using /usr/local/lib/python3.8/dist-packages
+Searching for retrying==1.3.3
+Best match: retrying 1.3.3
+Adding retrying 1.3.3 to easy-install.pth file
+
+Using /usr/local/lib/python3.8/dist-packages
+Searching for requests==2.22.0
+Best match: requests 2.22.0
+Adding requests 2.22.0 to easy-install.pth file
+
+Using /usr/lib/python3/dist-packages
+Searching for plotly==4.14.3+8.g03979d105
+Best match: plotly 4.14.3+8.g03979d105
+Processing plotly-4.14.3+8.g03979d105-py3.8.egg
+plotly 4.14.3+8.g03979d105 is already the active version in easy-install.pth
+
+Using /usr/local/lib/python3.8/dist-packages/plotly-4.14.3+8.g03979d105-py3.8.egg
+Finished processing dependencies for chart-studio==1.1.0
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/chart-studio$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/chart-studio$ cd ..
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python$ ls -al
+total 20
+drwxrwxr-x  5 wruslan wruslan 4096 Apr 11 11:09 .
+drwxrwxr-x  4 wruslan wruslan 4096 Apr 11 11:09 ..
+drwxrwxr-x  8 wruslan wruslan 4096 Apr 11 11:30 chart-studio
+drwxrwxr-x 14 wruslan wruslan 4096 Apr 11 11:42 plotly
+drwxrwxr-x  7 wruslan wruslan 4096 Apr 11 11:36 plotly-geo
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python$ cd plotly-geo/
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/plotly-geo$ 
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/plotly-geo$ sudo python3.8 setup.py install
+....
+....
+copying build/lib/_plotly_geo/__init__.py -> build/bdist.linux-x86_64/egg/_plotly_geo
+byte-compiling build/bdist.linux-x86_64/egg/_plotly_geo/__init__.py to __init__.cpython-38.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly_geo.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly_geo.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly_geo.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying plotly_geo.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+_plotly_geo.__pycache__.__init__.cpython-38: module references __path__
+creating 'dist/plotly_geo-1.0.0-py3.8.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing plotly_geo-1.0.0-py3.8.egg
+creating /usr/local/lib/python3.8/dist-packages/plotly_geo-1.0.0-py3.8.egg
+Extracting plotly_geo-1.0.0-py3.8.egg to /usr/local/lib/python3.8/dist-packages
+Adding plotly-geo 1.0.0 to easy-install.pth file
+
+Installed /usr/local/lib/python3.8/dist-packages/plotly_geo-1.0.0-py3.8.egg
+Processing dependencies for plotly-geo==1.0.0
+Finished processing dependencies for plotly-geo==1.0.0
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads/plotly.py/packages/python/plotly-geo$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================

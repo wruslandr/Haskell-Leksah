@@ -1,0 +1,89 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ cd curve2d/
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ ls -al
+total 3504
+drwxrwxr-x  2 wruslan wruslan    4096 Apr 11 10:48 .
+drwxrwxr-x 16 wruslan wruslan    4096 Apr 11 10:32 ..
+-rw-rw-r--  1 wruslan wruslan      54 Apr 11 10:31 ex_curve01.cpt
+-rw-rw-r--  1 wruslan wruslan    1035 Apr 11 10:31 ex_curve01_decompose.py
+-rw-rw-r--  1 wruslan wruslan     993 Apr 11 10:31 ex_curve01_knot_insert.py
+-rw-rw-r--  1 wruslan wruslan     906 Apr 11 10:31 ex_curve01.py
+-rw-rw-r--  1 wruslan wruslan    1615 Apr 11 10:31 ex_curve01_refinement.py
+-rw-rw-r--  1 wruslan wruslan    1222 Apr 11 10:31 ex_curve01_split.py
+-rw-rw-r--  1 wruslan wruslan      36 Apr 11 10:31 ex_curve02.cpt
+-rw-rw-r--  1 wruslan wruslan    1427 Apr 11 10:31 ex_curve02_decompose.py
+-rw-rw-r--  1 wruslan wruslan    1279 Apr 11 10:31 ex_curve02.py
+-rw-rw-r--  1 wruslan wruslan    1237 Apr 11 10:31 ex_curve02_split.py
+-rw-rw-r--  1 wruslan wruslan      49 Apr 11 10:31 ex_curve03.cpt
+-rw-rw-r--  1 wruslan wruslan    1110 Apr 11 10:31 ex_curve03_decompose.py
+-rw-rw-r--  1 wruslan wruslan    1559 Apr 11 10:31 ex_curve03.py
+-rw-rw-r--  1 wruslan wruslan    1059 Apr 11 10:31 ex_curve04_convert3d.py
+-rw-rw-r--  1 wruslan wruslan     109 Apr 11 10:31 ex_curve04.cptw
+-rw-rw-r--  1 wruslan wruslan    1083 Apr 11 10:31 ex_curve04_decompose.py
+-rw-rw-r--  1 wruslan wruslan    1037 Apr 11 10:31 ex_curve04_degree.py
+-rw-rw-r--  1 wruslan wruslan     917 Apr 11 10:31 ex_curve04.py
+-rw-rw-r--  1 wruslan wruslan     854 Apr 11 10:31 ex_curve05_clamped.py
+-rw-rw-r--  1 wruslan wruslan     962 Apr 11 10:31 ex_curve05_periodic.py
+-rw-rw-r--  1 wruslan wruslan     885 Apr 11 10:31 ex_curve05_unclamped.py
+-rw-rw-r--  1 wruslan wruslan 3491074 Apr 11 10:49 temp-plot.html
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve01.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve01_decompose.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve01_knot_insert.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve01_refinement.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve01_split.py 
+Traceback (most recent call last):
+  File "ex_curve01_split.py", line 38, in <module>
+    c2tanvec = [-3 * p for p in c2tan[1]]
+IndexError: tuple index out of range
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve02.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve02_decompose.py 
+Traceback (most recent call last):
+  File "ex_curve02_decompose.py", line 37, in <module>
+    c2tanvec1 = [-1 * p for p in c2tan1[1]]
+IndexError: tuple index out of range
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve02_split.py
+Traceback (most recent call last):
+  File "ex_curve02_split.py", line 37, in <module>
+    c2tanvec = [-1 * p for p in c2tan[1]]
+IndexError: tuple index out of range
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve03.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve03_decompose.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+=========================================================== 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve04.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve04_convert3d.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve04_decompose.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve04_degree.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+=========================================================== 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve05_clamped.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve05_periodic.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve05_unclamped.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+

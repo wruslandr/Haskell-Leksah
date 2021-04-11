@@ -1,0 +1,310 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~$ date
+Sun 11 Apr 2021 09:17:27 AM +08
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ uname -a
+Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
+Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+(1) PYTHON2 MATPLOTLIB SUCCESS FOR GEOMDL
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python2
+Python 2.7.18 (default, Mar  8 2021, 13:02:45) 
+[GCC 9.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import matplotlib 
+>>> import geomdl
+>>> import geomdl.visualization.VisMPL
+>>> 
+>>> 
+[3]+  Stopped                 python2
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+(2) PYTHON3 MATPLOTLIB PROBLEM WITH GEOMDL
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import matplotlib
+>>> import geomdl
+>>> import geomdl.visualization.VisMPL
+
+/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/art3d.py:20: MatplotlibDeprecationWarning: 
+The deprecated function was deprecated in Matplotlib 3.4 and will be removed two minor releases later.
+  from . import proj3d
+/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py:32: MatplotlibDeprecationWarning: 
+The deprecated function was deprecated in Matplotlib 3.4 and will be removed two minor releases later.
+  from . import art3d
+/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py:34: MatplotlibDeprecationWarning: 
+The deprecated function was deprecated in Matplotlib 3.4 and will be removed two minor releases later.
+  from . import axis3d
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/wruslan/.local/lib/python3.8/site-packages/geomdl/visualization/VisMPL.py", line 14, in <module>
+    import matplotlib.pyplot as plt
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/pyplot.py", line 44, in <module>
+    from matplotlib.figure import Figure, figaspect
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/figure.py", line 24, in <module>
+    from matplotlib import docstring, projections
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/projections/__init__.py", line 4, in <module>
+    from mpl_toolkits.mplot3d import Axes3D
+  File "/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/__init__.py", line 1, in <module>
+    from .axes3d import Axes3D
+  File "/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py", line 42, in <module>
+    class Axes3D(Axes):
+  File "/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py", line 50, in Axes3D
+    def __init__(
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/docstring.py", line 40, in __call__
+    func.__doc__ = inspect.cleandoc(func.__doc__) % self.params
+KeyError: 'scale'
+>>> 
+>>> 
+[4]+  Stopped                 python3
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+(3) TRY REINSTALL PYTHON3 MATPLOTLIB
+===========================================================
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ sudo -H pip install matplotlib --upgrade matplotlib
+[sudo] password for wruslan: 
+Requirement already satisfied: matplotlib in /usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg (3.4.1.post258+g7ce970e1c)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.8/dist-packages/cycler-0.10.0-py3.8.egg (from matplotlib) (0.10.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /usr/lib/python3/dist-packages (from matplotlib) (1.0.1)
+Requirement already satisfied: numpy>=1.16 in /usr/local/lib/python3.8/dist-packages (from matplotlib) (1.19.5)
+Requirement already satisfied: pillow>=6.2.0 in /usr/lib/python3/dist-packages (from matplotlib) (7.0.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /usr/lib/python3/dist-packages (from matplotlib) (2.4.6)
+Requirement already satisfied: python-dateutil>=2.7 in /usr/lib/python3/dist-packages (from matplotlib) (2.7.3)
+Collecting setuptools_scm>=4
+  Using cached setuptools_scm-6.0.1-py3-none-any.whl (27 kB)
+Requirement already satisfied: six in /usr/local/lib/python3.8/dist-packages (from cycler>=0.10->matplotlib) (1.15.0)
+Requirement already satisfied: setuptools>=45 in /usr/lib/python3/dist-packages (from setuptools_scm>=4->matplotlib) (45.2.0)
+Installing collected packages: setuptools-scm
+Successfully installed setuptools-scm-6.0.1
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+(4) INSTALL PYTEST
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ sudo -H pip install pytest --upgrade pytest
+Collecting pytest
+  Downloading pytest-6.2.3-py3-none-any.whl (280 kB)
+     |==========================>| 280 kB 1.0 MB/s 
+Collecting py>=1.8.2
+  Downloading py-1.10.0-py2.py3-none-any.whl (97 kB)
+     |==========================>| 97 kB 990 kB/s 
+Requirement already satisfied: packaging in /usr/lib/python3/dist-packages (from pytest) (20.3)
+Requirement already satisfied: toml in /usr/local/lib/python3.8/dist-packages (from pytest) (0.10.2)
+Requirement already satisfied: pluggy<1.0.0a1,>=0.12 in /usr/local/lib/python3.8/dist-packages (from pytest) (0.13.1)
+Collecting attrs>=19.2.0
+  Downloading attrs-20.3.0-py2.py3-none-any.whl (49 kB)
+     |==========================>| 49 kB 982 kB/s 
+Collecting iniconfig
+  Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+Installing collected packages: py, iniconfig, attrs, pytest
+Successfully installed attrs-20.3.0 iniconfig-1.1.1 py-1.10.0 pytest-6.2.3
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+(5) EXECUTE PYTHON3 MODULE TESTS
+===========================================================
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python3 -m pytest
+======= test session starts ===============================
+platform linux -- Python 3.8.5, pytest-6.2.3, py-1.10.0, pluggy-0.13.1
+rootdir: /home/wruslan
+collecting ... 
+collected 0 items / 1 error   
+
+================ ERRORS ===================================
+_________ ERROR collecting test session ___________________
+/usr/local/lib/python3.8/dist-packages/_pytest/runner.py:311: in from_call
+    result: Optional[TResult] = func()
+/usr/local/lib/python3.8/dist-packages/_pytest/runner.py:341: in <lambda>
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+/usr/local/lib/python3.8/dist-packages/_pytest/main.py:710: in collect
+    for x in self._collectfile(path):
+/usr/local/lib/python3.8/dist-packages/_pytest/main.py:546: in _collectfile
+    assert (
+E   AssertionError: local('/home/wruslan/opt/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/libs/graph/test/planar_input_graphs/nonplanar_K_3_3_e_50.dimacs') is not a file (isdir=False, exists=True, islink=False)
+======== short test summary info ==========================
+ERROR  - AssertionError: local('/home/wruslan/opt/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/bo...
+!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!
+=========== 1 error in 2160.11s (0:36:00) ======+==========
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+(6) EXECUTE PYTHON2 MODULE TESTS
+===========================================================
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python2 -m pytest
+============== test session starts ========================
+platform linux2 -- Python 2.7.18, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+rootdir: /home/wruslan
+collecting ... 
+collected 0 items / 1 errors 
+
+=================== ERRORS ================================
+_____ ERROR collecting test session _______________________
+/usr/lib/python2.7/dist-packages/_pytest/runner.py:226: in from_call
+    result = func()
+/usr/lib/python2.7/dist-packages/_pytest/runner.py:253: in <lambda>
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+/usr/lib/python2.7/dist-packages/_pytest/main.py:543: in collect
+    for x in self._collect(arg):
+/usr/lib/python2.7/dist-packages/_pytest/main.py:601: in _collect
+    for x in self._collectfile(path):
+/usr/lib/python2.7/dist-packages/_pytest/main.py:640: in _collectfile
+    path.islink(),
+E   AssertionError: local('/home/wruslan/opt/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/boost/boost_1_74_0/doc/html/boost_asio/example/cpp11/http/server/server.cpp') is not a file (isdir=False, exists=True, islink=False)
+!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!!!
+============ 1 error in 282.33 seconds ====================
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/local/lib/python3.8/dist-packages/ | grep mat
+drwxr-sr-x   6 root staff    4096 Apr  1 06:45 matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg
+drwxr-sr-x   5 root staff    4096 Mar 29 21:52 tensorflow_estimator
+drwxr-sr-x   2 root staff    4096 Mar 29 21:52 tensorflow_estimator-2.4.0.dist-info
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/local/lib/python3.8/dist-packages/ | grep mpl
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/local/lib/python3.8/dist-packages/ | grep mpl
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/local/lib/ | grep python
+drwxrwsr-x  4 root staff    4096 Apr  8 22:55 python2.7
+drwxrwsr-x  3 root staff    4096 Feb 10 23:27 python3.8
+drwxrwsr-x  3 root staff    4096 Apr  1 07:41 python3.9
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/local/lib/python3.9/
+total 12
+drwxrwsr-x 3 root staff 4096 Apr  1 07:41 .
+drwxr-xr-x 7 root root  4096 Apr  7 20:36 ..
+drwxrwsr-x 2 root staff 4096 Apr  1 07:41 dist-packages
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/local/lib/python3.9/dist-packages/
+total 8
+drwxrwsr-x 2 root staff 4096 Apr  1 07:41 .
+drwxrwsr-x 3 root staff 4096 Apr  1 07:41 ..
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/lib/python3.9/
+total 4988
+drwxr-xr-x  34 root root  12288 Apr  1 07:49 .
+drwxr-xr-x 209 root root  24576 Apr  8 18:04 ..
+-rw-r--r--   1 root root   4489 Oct 20 16:43 abc.py
+-rw-r--r--   1 root root  32605 Oct 20 16:43 aifc.py
+-rw-r--r--   1 root root   3270 Oct 20 16:43 _aix_support.py
+-rw-r--r--   1 root root    500 Oct 20 16:43 antigravity.py
+-rw-r--r--   1 root root  98010 Oct 20 16:43 argparse.py
+-rw-r--r--   1 root root  52558 Oct 20 16:43 ast.py
+-rw-r--r--   1 root root  11321 Oct 20 16:43 asynchat.py
+drwxr-xr-x   3 root root   4096 Apr  1 07:41 asyncio
+-rw-r--r--   1 root root  20102 Oct 20 16:43 asyncore.py
+-rwxr-xr-x   1 root root  19857 Oct 20 16:43 base64.py
+....
+....
+wruslan@HPEliteBk8470p-ubstudio-20:~$ ls -al /usr/lib/python3.9/ | grep mat
+-rw-r--r--   1 root root   5981 Oct 20 16:43 fnmatch.py
+-rw-r--r--   1 root root  15143 Oct 20 16:43 formatter.py
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+(7) INSTALL PLOTLY AS ALTERNATIVE TO MATPLOTLIB
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ sudo -H pip install plotly
+[sudo] password for wruslan: 
+Collecting plotly
+  Downloading plotly-4.14.3-py2.py3-none-any.whl (13.2 MB)
+     |=================================> | 13.2 MB 456 kB/s 
+Requirement already satisfied: six in /usr/local/lib/python3.8/dist-packages (from plotly) (1.15.0)
+Collecting retrying>=1.3.3
+  Downloading retrying-1.3.3.tar.gz (10 kB)
+Building wheels for collected packages: retrying
+  Building wheel for retrying (setup.py) ... done
+  Created wheel for retrying: filename=retrying-1.3.3-py3-none-any.whl size=11429 sha256=e54f21605a66cf3f50c9e9003692c50ae5dadef601b27065fa9d339e0f4aa8d5
+  Stored in directory: /root/.cache/pip/wheels/c4/a7/48/0a434133f6d56e878ca511c0e6c38326907c0792f67b476e56
+Successfully built retrying
+Installing collected packages: retrying, plotly
+Successfully installed plotly-4.14.3 retrying-1.3.3
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads$ sudo apt install python3-plotly
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python3-attr python3-importlib-metadata python3-jsonschema python3-jupyter-core python3-more-itertools python3-nbformat python3-pyrsistent python3-retrying
+  python3-zipp
+Suggested packages:
+  python-attr-doc python-jsonschema-doc python3-pandas python3-ipykernel
+The following NEW packages will be installed:
+  python3-attr python3-importlib-metadata python3-jsonschema python3-jupyter-core python3-more-itertools python3-nbformat python3-plotly python3-pyrsistent
+  python3-retrying python3-zipp
+0 upgraded, 10 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2,223 kB of archives.
+After this operation, 34.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+....
+....
+Fetched 2,223 kB in 3s (809 kB/s)            
+....
+....
+Setting up python3-more-itertools (4.2.0-1build1) ...
+Setting up python3-attr (19.3.0-2) ...
+Setting up python3-retrying (1.3.3-4) ...
+Setting up python3-zipp (1.0.0-1) ...
+Setting up python3-pyrsistent:amd64 (0.15.5-1build1) ...
+Setting up python3-jupyter-core (4.6.3-3) ...
+Setting up python3-importlib-metadata (1.5.0-1) ...
+Setting up python3-jsonschema (3.2.0-0ubuntu2) ...
+Setting up python3-nbformat (5.0.4-1) ...
+Setting up python3-plotly (4.4.1+dfsg-1) ...
+/usr/lib/python3/dist-packages/_plotly_utils/utils.py:214: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if (iso_string.split("-")[:3] is "00:00") or (iso_string.split("+")[0] is "00:00"):
+/usr/lib/python3/dist-packages/_plotly_utils/utils.py:214: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if (iso_string.split("-")[:3] is "00:00") or (iso_string.split("+")[0] is "00:00"):
+/usr/lib/python3/dist-packages/plotly/figure_factory/_candlestick.py:194: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if direction is "increasing":
+/usr/lib/python3/dist-packages/plotly/figure_factory/_candlestick.py:199: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif direction is "decreasing":
+/usr/lib/python3/dist-packages/plotly/figure_factory/_ohlc.py:176: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if direction is "increasing":
+/usr/lib/python3/dist-packages/plotly/figure_factory/_ohlc.py:179: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif direction is "decreasing":
+/usr/lib/python3/dist-packages/plotly/matplotlylib/renderer.py:460: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if props["offset_coordinates"] is "data":
+/usr/lib/python3/dist-packages/plotly/matplotlylib/renderer.py:572: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if props["coordinates"] is not "data":
+wruslan@HPEliteBk8470p-ubstudio-20:~/Downloads$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import plotly
+>>> 
+>>> 
+[8]+  Stopped                 python3
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+

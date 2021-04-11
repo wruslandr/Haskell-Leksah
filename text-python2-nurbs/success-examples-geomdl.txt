@@ -1,0 +1,135 @@
+REFERENCE: https://github.com/orbingol/geomdl-examples
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ date
+Sun 11 Apr 2021 10:59:15 AM +08
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ uname -a
+Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
+Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ git clone https://github.com/orbingol/geomdl-examples.git 
+Cloning into 'geomdl-examples'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 1536 (delta 0), reused 2 (delta 0), pack-reused 1531
+Receiving objects: 100% (1536/1536), 2.59 MiB | 565.00 KiB/s, done.
+Resolving deltas: 100% (1012/1012), done.
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ cd geomdl-examples
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ rm -rf .git
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ rm -rf .gitignore 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ ls -al
+total 72
+drwxrwxr-x 16 wruslan wruslan 4096 Apr 11 10:32 .
+drwxrwxr-x  9 wruslan wruslan 4096 Apr 11 10:31 ..
+drwxrwxr-x  3 wruslan wruslan 4096 Apr 11 10:31 bezier
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 compat
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 curve2d
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 curve3d
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 exchange
+drwxrwxr-x  4 wruslan wruslan 4096 Apr 11 10:31 fitting
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 grid
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 isu
+-rw-rw-r--  1 wruslan wruslan 1065 Apr 11 10:31 LICENSE
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 objects
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 octave
+-rw-rw-r--  1 wruslan wruslan 1824 Apr 11 10:31 README.rst
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 shapes
+drwxrwxr-x  4 wruslan wruslan 4096 Apr 11 10:31 surface
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 visualization
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 volume
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ 
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ rm -rf .git
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ rm -rf .gitignore 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples$ cd curve2d/
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ ls -al
+total 92
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 10:31 .
+drwxrwxr-x 16 wruslan wruslan 4096 Apr 11 10:32 ..
+-rw-rw-r--  1 wruslan wruslan   54 Apr 11 10:31 ex_curve01.cpt
+-rw-rw-r--  1 wruslan wruslan 1035 Apr 11 10:31 ex_curve01_decompose.py
+-rw-rw-r--  1 wruslan wruslan  993 Apr 11 10:31 ex_curve01_knot_insert.py
+-rw-rw-r--  1 wruslan wruslan  906 Apr 11 10:31 ex_curve01.py
+-rw-rw-r--  1 wruslan wruslan 1615 Apr 11 10:31 ex_curve01_refinement.py
+-rw-rw-r--  1 wruslan wruslan 1222 Apr 11 10:31 ex_curve01_split.py
+-rw-rw-r--  1 wruslan wruslan   36 Apr 11 10:31 ex_curve02.cpt
+-rw-rw-r--  1 wruslan wruslan 1427 Apr 11 10:31 ex_curve02_decompose.py
+-rw-rw-r--  1 wruslan wruslan 1279 Apr 11 10:31 ex_curve02.py
+-rw-rw-r--  1 wruslan wruslan 1237 Apr 11 10:31 ex_curve02_split.py
+-rw-rw-r--  1 wruslan wruslan   49 Apr 11 10:31 ex_curve03.cpt
+-rw-rw-r--  1 wruslan wruslan 1110 Apr 11 10:31 ex_curve03_decompose.py
+-rw-rw-r--  1 wruslan wruslan 1559 Apr 11 10:31 ex_curve03.py
+-rw-rw-r--  1 wruslan wruslan 1059 Apr 11 10:31 ex_curve04_convert3d.py
+-rw-rw-r--  1 wruslan wruslan  109 Apr 11 10:31 ex_curve04.cptw
+-rw-rw-r--  1 wruslan wruslan 1083 Apr 11 10:31 ex_curve04_decompose.py
+-rw-rw-r--  1 wruslan wruslan 1037 Apr 11 10:31 ex_curve04_degree.py
+-rw-rw-r--  1 wruslan wruslan  917 Apr 11 10:31 ex_curve04.py
+-rw-rw-r--  1 wruslan wruslan  854 Apr 11 10:31 ex_curve05_clamped.py
+-rw-rw-r--  1 wruslan wruslan  962 Apr 11 10:31 ex_curve05_periodic.py
+-rw-rw-r--  1 wruslan wruslan  885 Apr 11 10:31 ex_curve05_unclamped.py
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve01.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve02.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+==========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve03.py 
+Traceback (most recent call last):
+  File "ex_curve03.py", line 16, in <module>
+    from geomdl.visualization import VisPlotly
+  File "/usr/lib/python2.7/dist-packages/geomdl/visualization/VisPlotly.py", line 13, in <module>
+    from plotly import graph_objs
+ImportError: No module named plotly
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python3.8 ex_curve03.py
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve04.py 
+Traceback (most recent call last):
+  File "ex_curve04.py", line 14, in <module>
+    from geomdl.visualization import VisPlotly
+  File "/usr/lib/python2.7/dist-packages/geomdl/visualization/VisPlotly.py", line 13, in <module>
+    from plotly import graph_objs
+ImportError: No module named plotly
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python3.8 ex_curve04.py
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+===========================================================
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve05_clamped.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve05_periodic.py 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ python2 ex_curve05_unclamped.py
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing/geomdl-examples/curve2d$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================

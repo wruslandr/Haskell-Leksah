@@ -1,0 +1,76 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import matplotlib
+>>> import geomdl
+>>> 
+>>> from geomdl import BSpline
+>>> 
+>>> crv = BSpline.Curve()
+>>> 
+>>> crv.degree = 2
+>>> 
+>>> crv.ctrlpts = [[1, 0, 0], [1, 1, 0], [0, 1, 0]]
+>>> 
+>>> crv.knotvector = [0, 0, 0, 1, 1, 1]
+>>> 
+>>> from geomdl.visualization import VisMPL
+/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/art3d.py:20: MatplotlibDeprecationWarning: 
+The deprecated function was deprecated in Matplotlib 3.4 and will be removed two minor releases later.
+  from . import proj3d
+/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py:32: MatplotlibDeprecationWarning: 
+The deprecated function was deprecated in Matplotlib 3.4 and will be removed two minor releases later.
+  from . import art3d
+/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py:34: MatplotlibDeprecationWarning: 
+The deprecated function was deprecated in Matplotlib 3.4 and will be removed two minor releases later.
+  from . import axis3d
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/wruslan/.local/lib/python3.8/site-packages/geomdl/visualization/VisMPL.py", line 14, in <module>
+    import matplotlib.pyplot as plt
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/pyplot.py", line 44, in <module>
+    from matplotlib.figure import Figure, figaspect
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/figure.py", line 24, in <module>
+    from matplotlib import docstring, projections
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/projections/__init__.py", line 4, in <module>
+    from mpl_toolkits.mplot3d import Axes3D
+  File "/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/__init__.py", line 1, in <module>
+    from .axes3d import Axes3D
+  File "/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py", line 42, in <module>
+    class Axes3D(Axes):
+  File "/usr/lib/python3/dist-packages/mpl_toolkits/mplot3d/axes3d.py", line 50, in Axes3D
+    def __init__(
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib-3.4.1.post258+g7ce970e1c-py3.8-linux-x86_64.egg/matplotlib/docstring.py", line 40, in __call__
+    func.__doc__ = inspect.cleandoc(func.__doc__) % self.params
+KeyError: 'scale'
+>>> 
+>>> 
+>>> crv.vis = VisMPL.VisCurve3D()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'VisMPL' is not defined
+>>> 
+>>> import matplotlib.VisMPL
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'matplotlib.VisMPL'
+>>> import matplotlib.vismpl
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'matplotlib.vismpl'
+>>> 
+
+>>> 
+>>> crv.render()
+/home/wruslan/.local/lib/python3.8/site-packages/geomdl/abstract.py:1014: UserWarning: No visualization component has been set
+  warnings.warn("No visualization component has been set")
+>>> 
+>>> 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
+

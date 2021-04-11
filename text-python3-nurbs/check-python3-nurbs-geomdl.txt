@@ -1,0 +1,286 @@
+geomdl - Object-oriented B-Spline and NURBS evaluation library in pure Python
+
+REF: https://nurbs-python.readthedocs.io/en/5.x/basics.html
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ date
+Sun 11 Apr 2021 07:43:25 AM +08
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ uname -a
+Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
+Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import matplotlib
+>>> import geomdl
+>>> 
+>>> help()
+
+help> modules matplotlib
+
+Here is a list of modules whose name or summary contains 'matplotlib'.
+If there are any, enter a module name to get more help.
+
+2021-04-11 07:38:00.569910: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/wruslan/opt/boost_1_74_0/stage/lib
+2021-04-11 07:38:00.569968: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+networkx.drawing.tests.test_pylab - Unit tests for matplotlib drawing functions.
+pandas.plotting._matplotlib 
+pandas.plotting._matplotlib.boxplot 
+pandas.plotting._matplotlib.compat 
+pandas.plotting._matplotlib.converter 
+pandas.plotting._matplotlib.core 
+pandas.plotting._matplotlib.hist 
+pandas.plotting._matplotlib.misc 
+pandas.plotting._matplotlib.style 
+pandas.plotting._matplotlib.timeseries 
+pandas.plotting._matplotlib.tools 
+skimage.io._plugins.matplotlib_plugin 
+tqdm.gui - Matplotlib GUI progressbar decorator for iterators.
+matplotlib - An object-oriented plotting library.
+matplotlib._animation_data 
+matplotlib._api - Helper functions for managing the Matplotlib API.
+matplotlib._api.deprecation - Helper functions for deprecating parts of the Matplotlib API.
+matplotlib._c_internal_utils 
+matplotlib._cm - Nothing here but dictionaries for generating LinearSegmentedColormaps,
+matplotlib._cm_listed 
+matplotlib._color_data 
+matplotlib._constrained_layout - Adjust subplot layouts so that there are no overlapping axes or axes
+matplotlib._contour 
+matplotlib._enums - Enums representing sets of strings that Matplotlib uses as input parameters.
+matplotlib._image 
+matplotlib._internal_utils - Internal debugging utilities, that are not expected to be used in the rest of
+matplotlib._layoutgrid - A layoutgrid is a nrows by ncols set of boxes, meant to be used by
+matplotlib._mathtext - Implementation details for :mod:`.mathtext`.
+matplotlib._mathtext_data - font data tables for truetype and afm computer modern fonts
+matplotlib._path 
+matplotlib._pylab_helpers - Manage figures for the pyplot interface.
+matplotlib._qhull 
+matplotlib._text_layout - Text layouting utilities.
+matplotlib._tri 
+matplotlib._ttconv 
+matplotlib._version 
+matplotlib.afm - A python interface to Adobe Font Metrics Files.
+matplotlib.animation 
+matplotlib.artist 
+matplotlib.axes 
+matplotlib.axes._axes 
+matplotlib.axes._base 
+matplotlib.axes._secondary_axes 
+matplotlib.axes._subplots 
+matplotlib.axis - Classes for the ticks and x and y axis.
+matplotlib.backend_bases - Abstract base classes define the primitives that renderers and
+matplotlib.backend_managers 
+matplotlib.backend_tools - Abstract base classes define the primitives for Tools.
+matplotlib.backends 
+matplotlib.backends._backend_agg 
+matplotlib.backends._backend_pdf_ps - Common functionality between the PDF and PS backends.
+matplotlib.backends._backend_tk 
+matplotlib.backends._tkagg 
+matplotlib.backends.backend_agg - An `Anti-Grain Geometry <http://antigrain.com>`_ (AGG) backend.
+matplotlib.backends.backend_cairo - A Cairo backend for Matplotlib
+matplotlib.backends.backend_gtk3 
+matplotlib.backends.backend_gtk3agg 
+matplotlib.backends.backend_gtk3cairo 
+matplotlib.backends.backend_macosx 
+matplotlib.backends.backend_mixed 
+matplotlib.backends.backend_nbagg - Interactive figures in the IPython notebook.
+matplotlib.backends.backend_pdf - A PDF Matplotlib backend.
+matplotlib.backends.backend_pgf 
+matplotlib.backends.backend_ps - A PostScript backend, which can produce both PostScript .ps and .eps.
+matplotlib.backends.backend_qt4 
+matplotlib.backends.backend_qt4agg - Render to qt from agg
+matplotlib.backends.backend_qt4cairo 
+matplotlib.backends.backend_qt5 
+matplotlib.backends.backend_qt5agg - Render to qt from agg.
+matplotlib.backends.backend_qt5cairo 
+matplotlib.backends.backend_svg 
+matplotlib.backends.backend_template - A fully functional, do-nothing backend intended as a template for backend
+matplotlib.backends.backend_tkagg 
+matplotlib.backends.backend_tkcairo 
+matplotlib.backends.backend_webagg - Displays Agg images in the browser, with interactivity
+matplotlib.backends.backend_webagg_core - Displays Agg images in the browser, with interactivity
+matplotlib.backends.backend_wx - A wxPython backend for matplotlib.
+matplotlib.backends.backend_wxagg 
+matplotlib.backends.backend_wxcairo 
+matplotlib.backends.qt_compat - Qt binding and backend selector.
+matplotlib.backends.qt_editor 
+matplotlib.backends.qt_editor._formlayout - formlayout
+matplotlib.backends.qt_editor._formsubplottool 
+matplotlib.backends.qt_editor.figureoptions - Module that provides a GUI-based editor for Matplotlib's figure options.
+matplotlib.backends.qt_editor.formsubplottool 
+matplotlib.bezier - A module providing some utility functions regarding Bezier path manipulation.
+matplotlib.blocking_input - Classes used for blocking interaction with figure windows:
+matplotlib.category - Plotting of string "category" data: ``plot(['d', 'f', 'a'], [1, 2, 3])`` will
+matplotlib.cbook - A collection of utility functions and classes.  Originally, many
+matplotlib.cbook.deprecation 
+matplotlib.cm - Builtin colormaps, colormap handling utilities, and the `ScalarMappable` mixin.
+matplotlib.collections - Classes for the efficient drawing of large collections of objects that
+matplotlib.colorbar - Colorbars are a visualization of the mapping from scalar values to colors.
+matplotlib.colors - A module for converting numbers or color arguments to *RGB* or *RGBA*.
+matplotlib.compat 
+matplotlib.container 
+matplotlib.contour - Classes to support contour plotting and labelling for the Axes class.
+matplotlib.dates - Matplotlib provides sophisticated date plotting capabilities, standing on the
+matplotlib.docstring 
+matplotlib.dviread - A module for reading dvi files output by TeX. Several limitations make
+matplotlib.figure - `matplotlib.figure` implements the following classes:
+matplotlib.font_manager - A module for finding, managing, and using fonts across platforms.
+matplotlib.fontconfig_pattern - A module for parsing and generating `fontconfig patterns`_.
+matplotlib.ft2font 
+matplotlib.gridspec - :mod:`~matplotlib.gridspec` contains classes that help to layout multiple
+matplotlib.hatch - Contains classes for generating hatch patterns.
+matplotlib.image - The image module supports basic image loading, rescaling and display
+matplotlib.legend - The legend module defines the Legend class, which is responsible for
+matplotlib.legend_handler - Default legend handlers.
+matplotlib.lines - 2D lines with support for a variety of line styles, markers, colors, etc.
+matplotlib.markers - Functions to handle markers; used by the marker functionality of
+matplotlib.mathtext - A module for parsing a subset of the TeX math syntax and rendering it to a
+matplotlib.mlab - Numerical python functions written for compatibility with MATLAB
+matplotlib.offsetbox - Container classes for `.Artist`\s.
+matplotlib.patches - Patches are `.Artist`\s with a face color and an edge color.
+matplotlib.path - A module for dealing with the polylines used throughout Matplotlib.
+matplotlib.patheffects - Defines classes for path effects. The path effects are supported in `~.Text`,
+matplotlib.projections 
+matplotlib.projections.geo 
+matplotlib.projections.polar 
+matplotlib.pylab - .. warning::
+matplotlib.pyplot - `matplotlib.pyplot` is a state-based interface to matplotlib. It provides
+matplotlib.quiver - Support for plotting vector fields.
+matplotlib.rcsetup - The rcsetup module contains the validation code for customization using
+matplotlib.sankey - Module for creating Sankey diagrams using Matplotlib.
+matplotlib.scale - Scales define the distribution of data values on an axis, e.g. a log scaling.
+matplotlib.sphinxext 
+matplotlib.sphinxext.mathmpl 
+matplotlib.sphinxext.plot_directive - A directive for including a Matplotlib plot in a Sphinx document
+matplotlib.spines 
+matplotlib.stackplot - Stacked area plot for 1D arrays inspired by Douglas Y'barbo's stackoverflow
+matplotlib.streamplot - Streamline plotting for 2D vector fields.
+matplotlib.style 
+matplotlib.style.core - Core functions and attributes for the matplotlib style library:
+matplotlib.table - Tables drawing.
+matplotlib.testing - Helper functions for testing.
+matplotlib.testing.compare - Utilities for comparing image results.
+matplotlib.testing.conftest 
+matplotlib.testing.decorators 
+matplotlib.testing.exceptions 
+matplotlib.testing.jpl_units - A sample set of units for use with testing unit conversion
+matplotlib.testing.jpl_units.Duration - Duration module.
+matplotlib.testing.jpl_units.Epoch - Epoch module.
+matplotlib.testing.jpl_units.EpochConverter - EpochConverter module containing class EpochConverter.
+matplotlib.testing.jpl_units.StrConverter - StrConverter module containing class StrConverter.
+matplotlib.testing.jpl_units.UnitDbl - UnitDbl module.
+matplotlib.testing.jpl_units.UnitDblConverter - UnitDblConverter module containing class UnitDblConverter.
+matplotlib.testing.jpl_units.UnitDblFormatter - UnitDblFormatter module containing class UnitDblFormatter.
+matplotlib.testing.widgets - ========================
+matplotlib.tests 
+matplotlib.texmanager - Support for embedded TeX expressions in Matplotlib via dvipng and dvips for the
+matplotlib.text - Classes for including text in a figure.
+matplotlib.textpath 
+matplotlib.ticker - Tick locating and formatting
+matplotlib.tight_bbox - Helper module for the *bbox_inches* parameter in `.Figure.savefig`.
+matplotlib.tight_layout - Routines to adjust subplot params so that subplots are
+matplotlib.transforms - Matplotlib includes a framework for arbitrary geometric
+matplotlib.tri - Unstructured triangular grid functions.
+matplotlib.tri.triangulation 
+matplotlib.tri.tricontour 
+matplotlib.tri.trifinder 
+matplotlib.tri.triinterpolate - Interpolation inside triangular grids.
+matplotlib.tri.tripcolor 
+matplotlib.tri.triplot 
+matplotlib.tri.trirefine - Mesh refinement for triangular grids.
+matplotlib.tri.tritools - Tools for triangular grids.
+matplotlib.ttconv - Converting and subsetting TrueType fonts to PS types 3 and 42, and PDF type 3.
+matplotlib.type1font - A class representing a Type 1 font.
+matplotlib.units - The classes here provide support for using custom classes with
+matplotlib.widgets - GUI neutral widgets
+IPython.core.magics.pylab - Implementation of magic functions for matplotlib/pylab support.
+IPython.core.pylabtools - Pylab (matplotlib) support utilities.
+descartes - Turn geometric objects into matplotlib patches
+INFO:root:Generating grammar tables from /usr/lib/python3.8/lib2to3/Grammar.txt
+INFO:root:Generating grammar tables from /usr/lib/python3.8/lib2to3/PatternGrammar.txt
+matplotlib_venn 
+matplotlib_venn._arc 
+matplotlib_venn._common 
+matplotlib_venn._math 
+matplotlib_venn._region 
+matplotlib_venn._util 
+matplotlib_venn._venn2 
+matplotlib_venn._venn3 
+mplexporter.exporter - Matplotlib Exporter
+mplexporter.renderers - Matplotlib Renderers
+mplexporter.tools - Tools for matplotlib plot exporting
+mplexporter.utils - Utility Routines for Working with Matplotlib Objects
+mpmath.visualization - Plotting (requires matplotlib)
+INFO:rdflib:RDFLib Version: 4.2.2
+sympy.physics.quantum.circuitplot - Matplotlib based plotting of quantum circuits.
+
+help> modules geomdl
+
+Here is a list of modules whose name or summary contains 'geomdl'.
+If there are any, enter a module name to get more help.
+
+geomdl - Object-oriented B-Spline and NURBS evaluation library in pure Python
+geomdl.BSpline - .. module:: BSpline
+geomdl.CPGen - .. module:: CPGen
+geomdl.NURBS - .. module:: NURBS
+geomdl._convert - .. module:: _convert
+geomdl._exchange - .. module:: _exchange
+geomdl._linalg - .. module:: _linalg
+geomdl._operations - .. module:: _operations
+geomdl._tessellate - .. module:: _tessellate
+geomdl._utilities - .. module:: _utilities
+geomdl._voxelize - .. module:: _voxelize
+geomdl.abstract - .. module:: abstract
+geomdl.compatibility - .. module:: compatibility
+geomdl.construct - .. module:: construct
+geomdl.control_points - .. module:: control_points
+geomdl.convert - .. module:: convert
+geomdl.elements - .. module:: elements
+geomdl.evaluators - .. module:: evaluators
+geomdl.exceptions - .. module:: exceptions
+geomdl.exchange - .. module:: exchange
+geomdl.exchange_vtk - .. module:: exchange_vtk
+geomdl.fitting - .. module:: interpolate
+geomdl.freeform - .. module:: freeform
+geomdl.functools_lru_cache - Backport of functools.lru_cache from Python 3.3 as published at ActiveState
+geomdl.helpers - .. module:: helpers
+geomdl.knotvector - .. module:: knotvector
+geomdl.linalg - .. module:: linalg
+geomdl.multi - .. module:: Multi
+geomdl.operations - .. module:: operations
+geomdl.ray - .. module:: ray
+geomdl.shortcuts - .. module:: _shortcuts
+geomdl.sweeping - .. module:: sweeping
+geomdl.tessellate - .. module:: tessellate
+geomdl.trimming - .. module:: trimming
+geomdl.utilities - .. module:: utilities
+geomdl.vis - .. module:: vis
+geomdl.visualization - Visualization Modules for NURBS-Python
+geomdl.visualization.VisMPL - .. module:: VisMPL
+geomdl.visualization.VisPlotly - .. module:: VisPlotly
+geomdl.visualization.VisVTK - .. module:: VisVTK
+geomdl.visualization.vtk_helpers - .. module:: vtk_helpers
+geomdl.voxelize - .. module:: voxelize
+
+help> 
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> 
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+

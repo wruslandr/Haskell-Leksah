@@ -1,0 +1,103 @@
+https://nurbs-python.readthedocs.io/en/5.x/install.html#install-via-pip
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ date
+Sun 11 Apr 2021 06:01:45 AM +08
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ uname -a
+Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
+Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ sudo  pip install --user geomdl
+[sudo] password for wruslan: 
+Collecting geomdl
+  Downloading geomdl-5.3.1-py2.py3-none-any.whl (147 kB)
+     |============================>| 147 kB 1.0 MB/s 
+Installing collected packages: geomdl
+Successfully installed geomdl-5.3.1
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ sudo pip install geomdl --upgrade
+Requirement already satisfied: geomdl in /root/.local/lib/python3.8/site-packages (5.3.1)
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ sudo apt install python-pytest
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python-atomicwrites python-attr python-configparser python-contextlib2 python-funcsigs python-importlib-metadata python-more-itertools python-packaging
+  python-pathlib2 python-pluggy python-py python-scandir python-wcwidth python-zipp
+Suggested packages:
+  python-attr-doc python-funcsigs-doc subversion python-mock
+The following NEW packages will be installed:
+  python-atomicwrites python-attr python-configparser python-contextlib2 python-funcsigs python-importlib-metadata python-more-itertools python-packaging
+  python-pathlib2 python-pluggy python-py python-pytest python-scandir python-wcwidth python-zipp
+0 upgraded, 15 newly installed, 0 to remove and 3 not upgraded.
+Need to get 521 kB of archives.
+After this operation, 2,649 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+....
+...
+===========================================================
+RUN PYTEST
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~$ pytest
+============================ test session starts ==========
+platform linux2 -- Python 2.7.18, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+rootdir: /home/wruslan
+collected 19173 items / 2071 errors / 66 skipped / 17036 selected                                                                                                       
+....
+....
+....
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 2071 errors during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+======================== 66 skipped, 11 warnings, 2071 error in 1178.48 seconds ====
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ sudo pip install geomdl
+[sudo] password for wruslan: 
+Requirement already satisfied: geomdl in /root/.local/lib/python3.8/site-packages (5.3.1)
+wruslan@HPEliteBk8470p-ubstudio-20:~$ 
+
+===========================================================
+REF: https://nurbs-python.readthedocs.io/en/5.x/basics.html
+
+wruslan@HPEliteBk8470p-ubstudio-20:~$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import geomdl
+>>> 
+>>> from geomdl import BSpline
+>>>
+>>> # Create the curve instance
+>>> crv = BSpline.Curve()
+>>>
+>>> # Set degree
+>>> crv.degree = 2
+>>> 
+>>> # Set control points
+>>> crv.ctrlpts = [[1, 0, 0], [1, 1, 0], [0, 1, 0]]
+>>> 
+>>> # Set knot vector
+>>> crv.knotvector = [0, 0, 0, 1, 1, 1]
+>>> 
+>>> # Get curve point at u = 0.5
+>>> point = crv.evaluate_single(0.5)
+>>> 
+
+===========================================================
+
+
+

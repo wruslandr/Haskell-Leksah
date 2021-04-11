@@ -1,0 +1,66 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ date
+Sun 11 Apr 2021 12:15:24 PM +08
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ uname -a
+Linux HPEliteBk8470p-ubstudio-20 5.10.25-rt35 #3 SMP PREEMPT_RT 
+Wed Apr 7 12:33:26 +08 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr$ ls -al
+total 20
+drwxrwxr-x 4 wruslan wruslan 4096 Apr 10 15:15 .
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 31 03:12 ..
+drwxrwxr-x 9 wruslan wruslan 4096 Apr 11 10:31 apps-testing
+-rw-rw-r-- 1 wruslan wruslan  618 Apr 10 13:31 IMPT-uname-passwd-git-push-origin-master.txt
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr$ cd apps-testing/
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ ls -al
+total 40
+drwxrwxr-x  9 wruslan wruslan 4096 Apr 11 10:31 .
+drwxrwxr-x  4 wruslan wruslan 4096 Apr 10 15:15 ..
+drwxrwxr-x 16 wruslan wruslan 4096 Apr 11 10:32 geomdl-examples
+drwxrwxr-x  8 wruslan wruslan 4096 Apr 11 11:00 .git
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 10 15:25 octave6
+-rw-rw-r--  1 wruslan wruslan   32 Apr 10 15:16 README.md
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 10 15:18 scilab6
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 10 15:20 sessions
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 12:10 text-python2-nurbs
+drwxrwxr-x  2 wruslan wruslan 4096 Apr 11 11:55 text-python3-nurbs
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$
+ 
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ git add .
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ git commit -m "initial commit"
+[master b7cc937] initial commit
+ 6 files changed, 1181 insertions(+), 1 deletion(-)
+ create mode 100644 text-python2-nurbs/install-node-npm.txt
+ create mode 100644 text-python2-nurbs/python2-testing-curve2d.txt
+ create mode 100644 text-python2-nurbs/success-install-python2-plotly-from-source.txt
+ create mode 100644 text-python3-nurbs/success-install-python3-plotly-from-source.txt
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ 
+
+===========================================================
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ git push origin master
+Username for 'https://github.com': wruslandr
+Password for 'https://wruslandr@github.com': 
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 12.40 KiB | 162.00 KiB/s, done.
+Total 12 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 6 local objects.
+To https://github.com/wruslandr/Haskell-Leksah.git
+   7f28bd5..b7cc937  master -> master
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslandr/apps-testing$ 
+
+
